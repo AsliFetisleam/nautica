@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPanePersoane" minHeight="0.0" minWidth="0.0" prefHeight="621.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="licenta.ControllerManagement">
+   <children>
+      <TabPane layoutX="217.0" layoutY="17.0" prefHeight="624.0" prefWidth="779.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Persoana noua">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="8.0" prefHeight="39.0" prefWidth="768.0" style="-fx-background-color: #005995;" text="Adauga o noua persoana" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="68.0" prefHeight="27.0" prefWidth="325.0" style="-fx-background-color: #66c2ff;" text="Date de identificare">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="110.0" text="Nume" />
+                        <Label layoutX="16.0" layoutY="139.0" text="Prenume" />
+                        <Label layoutX="13.0" layoutY="171.0" prefHeight="15.0" prefWidth="68.0" text="Cod numeric" />
+                        <TextField layoutX="92.0" layoutY="106.0" prefHeight="25.0" prefWidth="237.0" />
+                        <TextField layoutX="92.0" layoutY="135.0" prefHeight="25.0" prefWidth="236.0" />
+                        <TextField layoutX="92.0" layoutY="165.0" prefHeight="25.0" prefWidth="236.0" />
+                        <Label layoutX="13.0" layoutY="362.0" prefHeight="27.0" prefWidth="327.0" style="-fx-background-color: #66c2ff;" text="Date de contact">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="289.0" text="Strada" />
+                        <Label layoutX="240.0" layoutY="289.0" text="Nr." />
+                        <Label layoutX="13.0" layoutY="318.0" text="Oras" />
+                        <Label layoutX="184.0" layoutY="318.0" text="Tara" />
+                        <Label layoutX="12.0" layoutY="406.0" text="Tel. mobil" />
+                        <Label layoutX="12.0" layoutY="438.0" text="Tel. fix" />
+                        <Label layoutX="13.0" layoutY="468.0" text="E-mail" />
+                        <Label layoutX="13.0" layoutY="200.0" text="Data nasterii" />
+                        <DatePicker layoutX="92.0" layoutY="196.0" prefHeight="25.0" prefWidth="237.0" />
+                        <TextField layoutX="77.0" layoutY="402.0" prefHeight="25.0" prefWidth="256.0" />
+                        <TextField layoutX="77.0" layoutY="434.0" prefHeight="25.0" prefWidth="256.0" />
+                        <TextField layoutX="76.0" layoutY="464.0" prefHeight="25.0" prefWidth="256.0" />
+                        <TextField layoutX="77.0" layoutY="285.0" />
+                        <TextField layoutX="265.0" layoutY="285.0" prefHeight="25.0" prefWidth="66.0" />
+                        <TextField layoutX="77.0" layoutY="315.0" prefHeight="25.0" prefWidth="97.0" />
+                        <TextField layoutX="222.0" layoutY="315.0" prefHeight="25.0" prefWidth="109.0" />
+                        <ImageView fitHeight="194.0" fitWidth="194.0" layoutX="453.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../surse/No_available_image.gif" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="503.0" layoutY="272.0" mnemonicParsing="false" text="Adauga poza..." />
+                        <Label layoutX="11.0" layoutY="243.0" prefHeight="29.0" prefWidth="326.0" style="-fx-background-color: #66c2ff;" text="Adresa">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Button layoutX="633.0" layoutY="540.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Salveaza" />
+                        <Label layoutX="12.0" layoutY="510.0" prefHeight="29.0" prefWidth="329.0" style="-fx-background-color: #66c2ff;" text="Alte informatii">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField layoutX="123.0" layoutY="553.0" />
+                        <Label layoutX="12.0" layoutY="555.0" text="Locatie documente" />
+                        <Button layoutX="277.0" layoutY="553.0" mnemonicParsing="false" text="Adauga..." />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Gestiune angajati">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="8.0" prefHeight="39.0" prefWidth="768.0" style="-fx-background-color: #005995;" text="Gestiunea angajatilor actuali" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <TableView fx:id="TabelaAngajati" layoutX="14.0" layoutY="281.0" prefHeight="281.0" prefWidth="745.0" />
+                        <ComboBox layoutX="14.0" layoutY="221.0" prefHeight="25.0" prefWidth="159.0" />
+                        <PieChart layoutX="559.0" layoutY="71.0" prefHeight="190.0" prefWidth="190.0" style="-fx-background-color: #66c2ff;" title="chart" />
+                        <PieChart layoutX="340.0" layoutY="69.0" prefHeight="190.0" prefWidth="190.0" style="-fx-background-color: #66c2ff;" title="chart" />
+                        <DatePicker layoutX="131.0" layoutY="111.0" />
+                        <DatePicker layoutX="131.0" layoutY="144.0" />
+                        <Label layoutX="14.0" layoutY="70.0" prefHeight="30.0" prefWidth="293.0" style="-fx-background-color: #66c2ff;" text="Disponibiltate">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="147.0" text="Pana in data de">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="114.0" text="Din data de">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="185.0" prefHeight="25.0" prefWidth="290.0" style="-fx-background-color: #66c2ff;" text="Grad">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
